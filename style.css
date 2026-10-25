@@ -1,0 +1,135 @@
+
+/* Configurações gerais da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 40px 20px;
+    color: #172554;
+}
+
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+#formularioTarefa {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+#novaTarefa {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#novaTarefa:focus {
+    border-color: #4f46e5;
+}
+
+
+button {
+    padding: 12px 18px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #3730a3;
+}
+
+#listaTarefas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 14px;
+    margin-bottom: 10px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #form-tarefa {
+        flex-wrap: wrap;
+    }
+
+    #input-tarefa {
+        width: 100%;
+    }
+
+}
+
+.acoesTarefa {
+    display: flex;
+    gap: 10px;
+}
+
+.positivo,
+.negativo,
+.excluir {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 4px;
+    transition: all 0.2s ease;
+}
+
+.positivo.selecionado {
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+.negativo.selecionado {
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+
+
+
